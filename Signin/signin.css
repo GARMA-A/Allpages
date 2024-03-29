@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: 'poppins', sans-serif;
+    
+
+}
+
+html {
+    font-size: 55.5%;
+    background-image: linear-gradient(to right, black, rgb(3, 3, 28), rgb(3, 3, 28), black);
+    overflow-x: hidden;
+}
+
+:root {
+    --text-color: #fff;
+    --buttons-color: #DB4444;
+    --green: #00953c;
+    --text-second-color: rgb(174, 172, 172);
+    --star-color: #FFAD33;
+    --star-dark-color: #8D8D8D;
+    --blue-color: #326994;
+    --Circle-color: #817D7D;
+    --blue: #5557d1;
+
+    --bg-color: #09031B;
+    --sec-bg-color: #344162;
+    --text-color: #ffffff;
+    --white: #fdfdfd;
+    --sub-color: #e4d4f9;
+
+}
+
+.all {
+    width: 100vw;
+    height: 100vh;
+
+
+    font-family: 'Times New Roman', Times, serif;
+    animation: transitionIN 1s ease-out;
+
+
+}
+.home-nav {
+
+    font-size: 2rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    position: relative;
+    top: 1.5rem;
+    font-weight: 800;
+
+}
+
+.i {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-weight: 800;
+
+}
+.input
+
+
+{
+    color: white;
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+.home-nav h2 {
+    font-size: 2rem;
+}
+.i:hover {
+    color: var(--buttons-color);
+}
+
+
+
+
+.input input {
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    width: 22rem;
+    height: 3rem;
+    border-radius: 2rem;
+    color: var(--text-second-color);
+    text-align: center;
+
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-color: #4fc3dc;
+    margin: 0 0.4rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1rem #4fc3dc44, 0 0 5rem #4fc3dc, 0 0 10rem #4fc3dc;
+    animation: animate ease-in infinite;
+    animation-duration: calc(250s/var(--i));
+
+
+
+
+}
+
+.bubbles span:nth-child(even) {
+    background-color: #ff2d75;
+    box-shadow: 0 0 0 1rem #ff2d7544, 0 0 5rem #ff2d75,
+        0 0 10rem #ff2d75;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.1;
+        transform: translateY(200vh) scale(0);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: translateY(-10vh) scale(1);
+
+    }
+
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+
+}
+
+.btn-box .btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width: 15rem;
+    height: 100%;
+    background-color: var(--sub-color);
+    border: 0.2rem solid var(--sub-color);
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.btn-box .btn::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #87a7f3;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+.button {
+    width: 10vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.button button {
+    padding: 1rem;
+    background-color: var(--buttons-color);
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    width: 15rem;
+    font-family: cursive;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.button button:hover {
+    background-color: var(--blue-color);
+}
+
+.button button:active {
+    transform: scale(0.96);
+}
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+
+
+}
+
+.btn-box.btns a ::before {
+    background: var(--sec-bg-color);
+}
+
+
+
+div.footer{
+    
+    height: 40rem;
+    background-color: black;
+    text-decoration: none;
+}
+span.footer_content{
+   
+   
+}
+
+
+.right_middle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem  solid  var(--blue-color) ;
+   
+    border-radius: 10%;
+    margin: 2rem;
+    text-decoration: none;
+}
+.right_middle h2
+{
+    font-family: cursive;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.have_account
+{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.signin_form {
+   
+    
+    height: 20rem;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       font-size: 2rem;
+       position: relative;
+       left: 6rem;
+       
+
+}
+.signin_form  input{
+
+
+  width: 70%;
+  background: none;
+  color: white;
+  text-align: center;
+border: 0.1rem solid white;
+margin: 1rem 0;
+
+
+}
+
+.midle
+{
+    display: flex;
+    height: 40rem;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem 0;
+
+}
+.midle img {
+    width: 40rem;
+    border-radius: 5%;
+
+
+}
+.submit_button
+{
+    margin: 1rem 0;
+    background-image: linear-gradient(to right bottom , #73b9de,#14397d);
+   outline: none;
+   border: none;
+   width: 40%;
+   height: 4.5rem;
+    padding: 1.4rem;
+   border-radius: 1rem;
+   font-size: 2rem;
+   display: inline-block;
+       
+   transition: all 0.5s;
+   z-index: 5;
+
+}
+.submit_button:hover
+{
+    background-color: #14397d;
+}
+.google{
+    
+        background: none;
+        color: inherit;
+        border-style: solid;
+        border-color: #6b6b6b;
+        border-radius: 3px;
+        border-width: 1px;
+        margin: 100px;
+        padding: 0;
+        font: inherit;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        outline: inherit;
+        margin-top: 30px;
+        margin-bottom:0px;
+        padding-right: 50px;
+        padding-left: 50px;
+}
+.footer {
+    background-color: black;
+    width: 100vw;
+    height: 15rem;
+
+}
+
+@keyframes transitionIN {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+
+
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
