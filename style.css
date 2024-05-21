@@ -660,21 +660,103 @@ span.footer_content{
        color: aliceblue;
        font-family:'Times New Roman', Times, serif ;
 }
-@media(max-width:900px) {
+@media(max-width:800px) {
        .all{
+              
+       }
+       .slider img
+       {
               display: none;
        }
-       .smallScreen
+       .text
        {
-              background-image: linear-gradient(to right, black, rgb(3, 3, 28), rgb(3, 3, 28), black);
-              width: 100vw;
-              height: 100vh;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              font-size: 15px;
-              color: var(--Circle-color);
+             display: grid;
+             grid-template-rows: 1fr 1fr 1fr;
+             grid-template-columns: 1fr 1fr 1fr;
+             width: 100vw;
+            
+             z-index: 100;
+            margin: 0 1rem;
+             
        }
+       .input
+       {
+              display: none;
+       }
+       .today
+       {
+              margin-left: 1.3rem;
+            
+       }
+       .flash-sales
+       {
+              font-size: 1.4rem;
+              margin-left: 0;
+       }
+       .i5
+       {
+              display: none;
+       }
+       .i4
+       {
+              display: none;
+       }
+       .items
+       {
+              display: flex;
+              justify-content: center;
+              width: 100vw;
+              margin: 0;
+
+       }
+       .f2
+       {
+              display: flex;
+              justify-content: space-evenly;
+       }
+       .bx1
+       {
+              display: none;
+       }
+       .bx2
+       {
+              display: none;
+       }
+       .category .text h2 {
+              margin: 1rem 0;
+              transition: all 0.1s;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              position: relative;
+                     right: 0;
+                     font-size: 1.2rem;
+              
+
+
+       
+       }
+       .gallary
+       {
+              width: 80vw;
+       }
+       .centerGallary
+       {
+              display: flex;
+              justify-content: center;
+              margin:0; 
+        }
+        .bigPhoto
+        {
+              display: none;
+        }
+        .pulsate
+
+        {
+              display: none;
+        }
+     
+    
+   
 
 }
