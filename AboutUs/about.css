@@ -142,9 +142,9 @@ h2 {
  {
        font-size: 1.2rem;
              
-              animation: goright 2s;
-              font-family: cursive;
-              padding-bottom: 1.2rem;
+       animation: goright 2s;
+       font-family: 'Times New Roman', Times, serif;
+       padding-bottom: 1.2rem;
              
               
 
@@ -153,7 +153,7 @@ h2 {
        font-size: 1.2rem;
      
        animation: goright 2s;
-font-family: cursive;
+font-family: 'Times New Roman', Times, serif
         
 
 
@@ -511,6 +511,77 @@ span.footer_content{
        text-decoration: none;
        color: aliceblue;
        font-family:'Times New Roman', Times, serif ;
+}
+
+
+@media (max-width:700px) {
+
+.input
+{
+       display: none;
+}
+
+.ourstory
+{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: start;
+       align-items: center;
+       width: 100vw;
+       height: 65rem;
+       margin:  2rem 0;
+
+}
+.ourstory img
+{
+       width: 80%;
+       justify-self: start;
+       margin: 2rem 0;
+       left: 0;
+}
+.text
+{
+
+       width: 80vw;
+       align-self: flex-start;
+       justify-self: flex-end;
+       position: relative;
+       left: 2rem;
+       margin: 0;
+       bottom: 0;
+ 
+}
+.p1
+{
+       width: 80vw;
+
+}
+.p2
+{
+       width: 80vw;
+       display: none;
+
+}
+.Circles
+{
+       font-size: 0.75rem;
+       display: flex;
+       flex-wrap: wrap;
+       gap: 1rem;
+}
+.items
+{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       height: 100rem;
+}
+
+
+
+
+
+       
 }
 
 
