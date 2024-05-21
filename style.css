@@ -405,7 +405,7 @@ h2 {
        border-radius: 1rem;
        font-size: 2rem;
        width: 15rem;
-       font-family: cursive;
+      font-family: 'Times New Roman', Times, serif;
        transition: all 0.5s;
        cursor: pointer;
 
