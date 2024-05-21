@@ -253,14 +253,14 @@ span.footer_content{
     justify-content: center;
     align-items: center;
     border: 0.2rem  solid  var(--blue-color) ;
-   
+    font-family: 'Times New Roman', Times, serif;
     border-radius: 10%;
     margin: 2rem;
     text-decoration: none;
 }
 .right_middle h2
 {
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
     width: 100%;
     text-align: center;
