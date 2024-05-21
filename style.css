@@ -755,6 +755,20 @@ span.footer_content{
         {
               display: none;
         }
+         .button
+        {
+              font-family: 'Times New Roman', Times, serif;
+        }
+        .time
+        {
+              font-size: 2.5rem;
+             font-family: 'Times New Roman', Times, serif;
+        }
+     .time .d {
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+
+     }
      
     
    
